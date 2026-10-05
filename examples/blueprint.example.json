@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.5",
+  "assessment_intent": "learning-oriented",
+  "target_audience": "trained technical employees",
+  "target_role": "operations engineer",
+  "experience_level": "independently handles common tasks",
+  "primary_workplace_scenarios": [
+    "daily operations",
+    "pre-production validation"
+  ],
+  "frequent_tasks": [
+    "interpret system status",
+    "select the next safe validation step"
+  ],
+  "decision_authority": [
+    "collect evidence",
+    "perform approved validation",
+    "escalate with a structured summary"
+  ],
+  "out_of_role_actions": [
+    "promise an unapproved product outcome",
+    "change production controls without authorization"
+  ],
+  "scenario_language_style": "concise, operational, bilingual",
+  "question_types": {
+    "single_choice": 8,
+    "multiple_choice": 6,
+    "true_false": 2,
+    "short_answer_or_case": 4
+  },
+  "total_questions": 20,
+  "total_points": 100,
+  "passing_score": 80,
+  "duration_minutes": 40,
+  "difficulty_distribution": {
+    "简单": 6,
+    "一般": 10,
+    "困难": 4
+  },
+  "language": "zh-en",
+  "forbidden_content": [
+    "unsupported product behavior",
+    "role-inappropriate commitments",
+    "decorative scenarios"
+  ]
+}

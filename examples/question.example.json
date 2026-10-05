@@ -1,0 +1,64 @@
+{
+  "id": "SC-001",
+  "version": "1.0",
+  "type": "single_choice",
+  "stem": {
+    "zh": "一名运维工程师在上线前验证服务状态。控制台显示资源已启动，但业务探测仍失败。根据当前证据，下一步最合适的判断是什么？",
+    "en": "During pre-production validation, an operations engineer sees that the console reports the resource as started, but the business probe still fails. Based on the current evidence, which judgment is most appropriate?"
+  },
+  "options": [
+    {
+      "id": "service-not-proven",
+      "label": "A",
+      "text": {
+        "zh": "启动状态只证明控制面状态，尚不能证明业务服务可用",
+        "en": "The started state proves only the control-plane status; it does not yet prove business-service availability"
+      },
+      "correct": true
+    },
+    {
+      "id": "probe-irrelevant",
+      "label": "B",
+      "text": {
+        "zh": "业务探测结果与上线验证无关，因此可以忽略",
+        "en": "The business-probe result is unrelated to go-live validation and can therefore be disregarded"
+      },
+      "correct": false
+    },
+    {
+      "id": "availability-proven",
+      "label": "C",
+      "text": {
+        "zh": "只要资源显示已启动，就已经证明业务端到端可用",
+        "en": "Once the resource is shown as started, end-to-end business availability has already been proven"
+      },
+      "correct": false
+    },
+    {
+      "id": "failure-location-proven",
+      "label": "D",
+      "text": {
+        "zh": "业务探测失败已经唯一证明故障位于应用进程",
+        "en": "The failed business probe uniquely proves that the fault is in the application process"
+      },
+      "correct": false
+    }
+  ],
+  "answer": "A",
+  "difficulty": "一般",
+  "points": 4,
+  "explanation": {
+    "zh": "A 正确：控制面启动状态与业务端到端可用性属于不同证明层级，探测失败说明仍需沿业务路径继续验证。B 错在忽略上线目标；C 混淆资源状态与业务结果；D 在缺少分层证据时过早定位故障层。下一步应检查服务就绪、网络路径和业务事务结果。",
+    "en": "A is correct: a control-plane started state and end-to-end business availability are different proof levels, and the failed probe requires continued validation along the business path. B ignores the go-live objective; C conflates resource state with business outcome; D localizes the fault prematurely without layered evidence. The next checks should cover service readiness, the network path, and the business transaction result."
+  },
+  "knowledge_point": {
+    "zh": "分层状态证据与端到端可用性",
+    "en": "Layered state evidence and end-to-end availability"
+  },
+  "role_anchor": "operations engineer",
+  "workplace_task": "pre-production service validation",
+  "audience_fit": "common independent operations task",
+  "scenario_relevance": "distinguishes platform state from business outcome",
+  "capability_level": "application",
+  "auto_gradable": true
+}

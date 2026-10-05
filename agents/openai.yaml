@@ -1,0 +1,6 @@
+﻿interface:
+  display_name: "zsexam"
+  short_description: "Generate role-aware bilingual enterprise exams with quality control"
+  default_prompt: "Use $zsexam to identify my target role and workplace scenario, then generate a bilingual, quality-controlled exam from my training materials."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,23 @@
+# Generated exams and source materials
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.pdf
+*.xls
+*.xlsx
+
+# Runtime and temporary files
+__pycache__/
+*.py[cod]
+*.tmp
+*.temp
+~$*
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
