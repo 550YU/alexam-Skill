@@ -1,4 +1,4 @@
-# alexam-SKII
+# alexam-Skill
 
 A role-aware, bilingual AI exam-authoring skill for turning training materials into reusable, quality-controlled question banks and exam packages.
 
@@ -6,7 +6,7 @@ A role-aware, bilingual AI exam-authoring skill for turning training materials i
 
 ## What it does
 
-`alexam-SKII` guides an agent through:
+`alexam-Skill` guides an agent through:
 
 1. Complete source reading and knowledge decomposition.
 2. Interactive confirmation of the real audience, role, experience level, and workplace context.
