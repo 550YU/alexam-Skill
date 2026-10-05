@@ -1,6 +1,8 @@
 # alexam-Skill
 
-A role-aware, bilingual AI exam-authoring skill for turning training materials into reusable, quality-controlled question banks and exam packages.
+面向岗位与真实工作场景的双语 AI 考试命题 Skill，可将培训资料转化为可复用、经过质量控制的题库与考试交付包。
+
+A role-aware, workplace-oriented bilingual AI exam-authoring skill that turns training materials into reusable, quality-controlled question banks and exam packages.
 
 > High-quality authoring is not instant text generation. Correct answers and distractors require semantic reasoning, uniqueness proof, bilingual parity review, deduplication, and final artifact validation. Complex runs may take time; the skill reports progress by stage and does not trade correctness for speed.
 
