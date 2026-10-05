@@ -45,9 +45,19 @@ A role-aware, workplace-oriented bilingual AI exam-authoring skill that turns tr
 └── LICENSE                          # MIT License
 ```
 
-### Installation
+### One-Prompt Installation
 
-Copy this repository into your Copilot user skills directory and retain the existing folder structure:
+Copy the following single prompt into an AI coding tool that can access files and the internet:
+
+```text
+Install the AI skill from https://github.com/550YU/alexam-Skill into this AI tool's user-level skills directory under the folder name zsexam; preserve SKILL.md, agents/, references/, and examples/, detect and safely back up any existing zsexam installation before replacing it, reload or restart skill discovery when supported, verify that the zsexam skill is discoverable, and report the final installation path and validation result.
+```
+
+The AI tool should detect its own user-level skill location instead of assuming a fixed path. It must not overwrite an existing installation without first creating a recoverable backup. If the tool cannot access the internet or filesystem, use the manual installation below.
+
+### Manual Installation
+
+Copy this repository into your AI tool's user-level skills directory, name the installed folder `zsexam`, and retain the existing folder structure. For Copilot on Windows, the command is:
 
 ```powershell
 Copy-Item -Recurse . "$HOME\.copilot\skills\zsexam"
@@ -131,9 +141,19 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE).
 └── LICENSE                          # MIT 许可证
 ```
 
-### 安装
+### 一句话安装
 
-将本仓库复制到 Copilot 用户级 Skills 目录，并保留现有目录结构：
+将下面这一句话复制到具备网络和文件访问能力的 AI 编程工具中：
+
+```text
+请将 https://github.com/550YU/alexam-Skill 中的 AI Skill 安装到当前 AI 工具的用户级 Skills 目录，安装文件夹命名为 zsexam，完整保留 SKILL.md、agents/、references/ 和 examples/；如果已存在 zsexam，请先创建可恢复的备份再安全替换；如工具支持，请重新加载或重启 Skill 发现机制；最后验证 zsexam 能被正确识别，并报告实际安装路径和验证结果。
+```
+
+AI 工具应自行识别其用户级 Skill 目录，而不是假设固定路径。不得在未创建可恢复备份的情况下覆盖已有版本。如果当前工具无法访问网络或文件系统，请使用下面的手动安装方式。
+
+### 手动安装
+
+将本仓库复制到当前 AI 工具的用户级 Skills 目录，安装文件夹命名为 `zsexam`，并保留现有目录结构。对于 Windows 上的 Copilot，可执行：
 
 ```powershell
 Copy-Item -Recurse . "$HOME\.copilot\skills\zsexam"
