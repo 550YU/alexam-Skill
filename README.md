@@ -17,7 +17,7 @@ A role-aware, workplace-oriented bilingual AI exam-authoring skill that turns tr
 5. Bilingual workplace-scenario question generation.
 6. Correct-option and distractor design with bidirectional answer-uniqueness proof.
 7. Semantic deduplication, quality review, and automatic repair.
-8. Word/template and Kuxueyuan-compatible Excel delivery validation.
+8. Word/template and Excel delivery validation.
 9. Exam configuration, result analysis, and relearning recommendations.
 
 ## Key principles
@@ -56,7 +56,7 @@ Copy-Item -Recurse . "$HOME\.copilot\skills\zsexam"
 Restart or reload the skill host after installation. Invoke it with prompts such as:
 
 - `Use zsexam to generate a bilingual assessment from these training materials.`
-- `根据这份培训资料出题，并导出酷学院模板。`
+- `根据这份培训资料出题，并按照上传的模板导出。`
 - `Audit this question bank for duplicate reasoning paths and ambiguous answers.`
 
 ## Required interaction flow
@@ -74,11 +74,7 @@ If values are already explicit, it confirms them once rather than repeatedly ask
 
 Each question can include bilingual stem/options/explanation/knowledge point, answer, Chinese difficulty, score, cognitive level, tags, role anchor, workplace task, audience fit, scenario relevance, auto-grading suitability, and version.
 
-Release is blocked by ambiguous answers, implausible or nonparallel distractors, untranslated fields, semantic duplicates, off-theme questions, stale blueprint metadata, answer-mapping errors, template drift, or invalid Kuxueyuan Shared String serialization.
-
-## Kuxueyuan compatibility
-
-The skill preserves the uploaded workbook structure and verifies that populated answer cells use OOXML Shared Strings (`t="s"`) rather than inline strings. A visually correct workbook that fails importer-level serialization checks is not accepted.
+Release is blocked by ambiguous answers, implausible or nonparallel distractors, untranslated fields, semantic duplicates, off-theme questions, stale blueprint metadata, answer-mapping errors, or template drift.
 
 ## Safety and privacy
 
